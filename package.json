@@ -8,7 +8,7 @@
         "clean": "rm -rf ./dist",
         "build": "tsc",
         "dev": "ts-node ./src/index.ts",
-        "start": "nodemon ./dist/index.js",
+        "start": "ts-node ./src/index.ts",
         "prod": "npm run build && npm run start",
         "test": "echo \"Error: no test specified\" && exit 1"
     },

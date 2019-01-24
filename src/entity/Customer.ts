@@ -8,13 +8,20 @@ export class Customer
     id: number;
 
     @Column()
+    cpf: string;
+
+    @Column()
     name: string;
 
     @Column()
     email: string;
 
     @Column()
-    password: string;
+    phone: string;
+    // @Column()
+    // password: string;
+    @Column()
+    createdDate: Date;    
 
     @Column(type => Notification)
     notifications: Notification[];
