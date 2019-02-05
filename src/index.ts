@@ -23,6 +23,7 @@ createConnection().then(connection => {
     });
 
     app.use(function (req, res, next) {
+        //envia as conexões para API para submeter mensagens
         res.locals.listaSockets = listaSockets;
         // listaSockets.forEach(socket => {
         //     let value;

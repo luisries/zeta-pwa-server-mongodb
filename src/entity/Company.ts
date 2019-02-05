@@ -5,7 +5,7 @@ import { Customer } from "./Customer";
 export class Company
 {
     @ObjectIdColumn()
-    id: number;
+    _id: number;
 
     @Column()
     name: string;

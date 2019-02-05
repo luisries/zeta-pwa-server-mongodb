@@ -4,7 +4,7 @@ import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, ObjectIdColum
 export class Notification
 {
     @ObjectIdColumn()
-    id: number;
+    _id: number;
 
     @Column()
     message: string;
